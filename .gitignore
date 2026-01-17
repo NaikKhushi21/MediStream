@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+out/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+# Ignore test databases
+test*.db
+test*.db-shm
+test*.db-wal
+*.sqlite
+*.sqlite3
+
+# Uploads (user data)
+uploads/pdfs/*
+!uploads/pdfs/.gitkeep
+
+# Temporary files
+temp/
+
+# Checkpoints (LangGraph state - needed locally but shouldn't be in git)
+checkpoints/*.db
+checkpoints/*.db-shm
+checkpoints/*.db-wal
