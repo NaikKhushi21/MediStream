@@ -2,6 +2,10 @@
 
 An AI-powered medical lab report interpreter that analyzes patient lab results, extracts biomarkers, and provides personalized health insights. The system uses LangGraph for multi-agent orchestration, automatically redacts PII before processing, and offers an interactive chatbot interface for patient questions. Built with React/TypeScript frontend, FastAPI backend, and integrates with FHIR-compliant healthcare systems.
 
+## Demo
+
+📹 **[Watch Demo Video](https://drive.google.com/file/d/1295Gwdb3jK1F6QVSQeGt0wH9FAV3QvqM/view?usp=sharing)**
+
 ## Architecture
 
 ### Frontend (React/TypeScript)
