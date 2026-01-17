@@ -267,7 +267,7 @@ async def chat(session_id: str, request: dict):
         llm = ChatOpenAI(
             model="google/gemini-2.5-flash",
             temperature=0.7,
-            api_key=os.getenv("OPENROUTER_API_KEY"),
+            api_key=os.getenv("OPENAI_API_KEY"),
             base_url="https://openrouter.ai/api/v1",
             max_tokens=int(os.getenv("OPENROUTER_MAX_TOKENS", "5000")),
             default_headers={

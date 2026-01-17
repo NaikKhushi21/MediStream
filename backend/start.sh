@@ -26,7 +26,7 @@ mkdir -p uploads checkpoints
 if [ ! -f ".env" ]; then
     echo "⚠️  .env file not found. Creating from .env.example..."
     cp .env.example .env
-    echo "⚠️  Please edit .env and add your OPENROUTER_API_KEY"
+    echo "⚠️  Please edit .env and add your OPENAI_API_KEY"
 fi
 
 # Install Playwright browsers

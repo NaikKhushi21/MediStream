@@ -1,21 +1,24 @@
 # MediStream: Agentic Patient Triage & Lab Interpreter
 
-A high-caliber 2026 portfolio piece demonstrating complex state management (LangGraph), real-time communication (WebRTC), and strict data governance (PII/HIPAA concepts).
+An AI-powered medical lab report interpreter that analyzes patient lab results, extracts biomarkers, and provides personalized health insights. The system uses LangGraph for multi-agent orchestration, automatically redacts PII before processing, and offers an interactive chatbot interface for patient questions. Built with React/TypeScript frontend, FastAPI backend, and integrates with FHIR-compliant healthcare systems.
 
 ## Architecture
 
 ### Frontend (React/TypeScript)
+
 - Dashboard for uploading lab PDFs
 - WebRTC voice interface for real-time AI conversation
 - Human-in-the-loop approval mechanisms
 
 ### Backend (FastAPI/Python)
+
 - Orchestration layer managing LangGraph states
 - PDF parsing with PyMuPDF
 - PII redaction with Microsoft Presidio
 - FHIR integration for patient records
 
 ### The Agent (LangGraph)
+
 - **Node 1 (Interpreter)**: Extracts biomarkers and cross-references with NIH Clinical Tables
 - **Node 2 (Specialist Scout)**: Browser-use agent searches for specialists when needed
 - **Node 3 (Safety Audit)**: Ensures medical disclaimers and safety compliance
@@ -34,6 +37,7 @@ A high-caliber 2026 portfolio piece demonstrating complex state management (Lang
 ## Setup
 
 ### Backend Setup
+
 ```bash
 cd backend
 python -m venv venv
@@ -43,6 +47,7 @@ uvicorn main:app --reload
 ```
 
 ### Frontend Setup
+
 ```bash
 cd frontend
 npm install
@@ -52,8 +57,9 @@ npm run dev
 ## Environment Variables
 
 Create a `.env` file in the backend directory:
+
 ```
-OPENROUTER_API_KEY=your_openrouter_api_key
+OPENAI_API_KEY=your_api_key
 HAPI_FHIR_BASE_URL=https://hapi.fhir.org/baseR4
 ```
 

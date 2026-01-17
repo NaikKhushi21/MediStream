@@ -51,7 +51,7 @@ class TriageAgent:
         self.llm = ChatOpenAI(
             model="google/gemini-2.5-flash",
             temperature=0.1,
-            api_key=os.getenv("OPENROUTER_API_KEY"),
+            api_key=os.getenv("OPENAI_API_KEY"),
             base_url="https://openrouter.ai/api/v1",
             max_tokens=int(os.getenv("OPENROUTER_MAX_TOKENS", "3500")),  # Configurable via env var (default 3500)
             default_headers={
